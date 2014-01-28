@@ -8,7 +8,9 @@ networking:
     - template: jinja
     - sources:
           - salt://interfaces.tmpl
-  file.append:
+
+/etc/hosts:
+    file.append:
     - name: /etc/hosts
     - template: jinja
     - sources:
