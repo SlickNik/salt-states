@@ -8,3 +8,8 @@ networking:
     - template: jinja
     - sources:
           - salt://interfaces.tmpl
+  file.append:
+    - name: /etc/hosts
+    - template: jinja
+    - sources:
+          - salt://hosts.tmpl
